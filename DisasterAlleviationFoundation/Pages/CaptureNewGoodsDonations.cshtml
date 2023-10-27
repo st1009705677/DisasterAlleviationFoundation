@@ -1,0 +1,34 @@
+﻿@page
+@model DisasterAlleviationFoundation.Pages.CaptureNewGoodsDonationsModel
+@{
+}
+
+<h2>Capture New Goods Donations</h2>
+<div class="registration-page">
+    <div class="form">
+
+
+        <label for="text">Donor's Name</label><br>
+        <input type="text" placeholder="Enter your name or Annonymous..." />
+        <br />
+        <label for="text">Number Of Items</label><br>
+        <input type="number" placeholder="Enter the number of items that where donated..." />
+        <br />
+        <label for="text">Date</label><br>
+        <input type="date" placeholder="Pick a date of the donation" />
+        <br />
+        
+        
+        <label for="categories">Choose a category:</label>
+        <select name="Categories" id="Categories">
+          <option value="clothes">Clothes</option>
+            <option value="non-perishable foods">Non-perishable foods</option>
+         </select>
+        <a href="/Categories">Add New Category</a>
+        <br />
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <br />
+        
+        </>
+    </div>
+</div>

@@ -1,0 +1,38 @@
+﻿@page
+@model DisasterAlliviationFoundation.Pages.ViewAllListsModel
+@{
+ViewData["Title"] = "";
+}
+<h1>@ViewData["Title"]</h1>
+
+<br/>
+
+<h2>All Lists</h2>
+<br>
+<a class="btn-light btn-sm" href="CaptureNewDisaster">Capture New Disaster</a>
+<br>
+<table class="table">
+    <thread>
+        <tr>
+            <th>All Incoming Monetary Donations</th>
+            <th>All Incoming Goods Donations</th>
+            <th>All Disasters</th>
+        </tr>
+    </thread>
+    <tbody>
+        @foreach (var viewAllLists in Model.ListViewAllLists)
+        {
+            
+       
+        <tr>
+
+                <td>viewAllLists.All Incoming Monetary Donations</td>
+                <td>viewAllLists.All Incoming Goods Donations</td>
+                <td>viewAllLists.All Disasters</td>
+                <td>
+
+                </td>
+        </tr>
+        }
+    </tbody>
+</table>

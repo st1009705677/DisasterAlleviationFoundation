@@ -1,0 +1,90 @@
+﻿@page
+@model DisasterAlleviationFoundation.Pages.CaptureNewDisasterModel
+@{
+}
+
+<h2>Capture New Disaster</h2>
+<div class="CaptureNewDisaster-page">
+    <div class="form">
+
+        <label for="text">Start Date</label><br>
+        <input type="date" placeholder="Pick start date" />
+        <br />
+
+        <label for="text">End Date</label><br>
+        <input type="date" placeholder="Pick end date" />
+        <br />
+
+
+        <label for="text">Donor's Name</label><br>
+        <input type="text" placeholder="Enter your name or Annonymous..." />
+        <br />
+
+        <label for="text">Number Of Items</label><br>
+        <input type="number" placeholder="Enter the number of items that where donated..." />
+        <br />
+
+        <label for="text">Describe</label><br>
+        <textarea rows="5" cols="50" name="description">Describe the the new disaster...</textarea>
+        <br />
+
+        <label for="location">Location:</label>
+        <select name="location" id="location">
+            <option value="Limpopo">Limpopo</option>
+            <option value="gauteng">Gauteng</option>
+            <option value="eastern cape">Eastern cape</option>
+            <option value="western cape">Western Cape</option>
+            <option value="northern cape">Northern Cape</option>
+            <option value="kwa zulu-natal">Kwa Zulu-Natal</option>
+            <option value="mpumalanga">Mpumalnaga</option>
+            <option value="north west">North West</option>
+            </select>
+
+        <form>
+            <fieldset>
+                <legend>Required Aid Types:</legend>
+                <div>
+                    <input type="checkbox" id="water provision" name="source" value="water provision">
+                    <label for="water provision">Water Provision</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Clothing" name="source" value="Clothing">
+                    <label for="Clothing">Clothing</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="sanitary" name="source" value="Sanitary">
+                    <label for="search-engine">"Sanitary"</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Food" name="source" value="Food">
+                    <label for="food">Food</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="blankets" name="source" value="blankets">
+                    <label for="blankets">Blankets</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="event" name="source" value="event">
+                    <label for="event">Event</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="billboard" name="source" value="billboard">
+                    <label for="billboard">Billboard</label>
+                </div>
+               
+            </fieldset>
+        </form>
+
+        <label for="categories">Choose a category:</label>
+        <select name="Categories" id="Categories">
+            <option value="clothes">Clothes</option>
+            <option value="non-perishable foods">Non-perishable foods</option>
+        </select>
+        <a href="/Categories">Add New Category</a>
+        <br />
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <br />
+
+        </>
+    </div>
+</div>

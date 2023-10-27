@@ -1,0 +1,73 @@
+﻿@page
+@model DisasterAlleviationFoundation.Pages.CategoriesModel
+@{
+}
+<h2>Categories</h2>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="category-container">
+                <div class="category-head">
+                    Category
+                </div>
+                <div class="category-body">
+                    <button type="button" class="btn btn-outline-primary add-category">
+                        Add New Category Filter
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="category-element" style="display: none">
+    <div class="category-add-element">
+        <div class="form-group">
+            <input type="text" name="category" class="form-control" placeholder="Enter Category">
+        </div>
+        <button type="button" class="btn btn-outline-success btn-sm save-add-category">Save</button>
+        <button type="button" class="btn btn-outline-secondary btn-sm cancel-add-category">Cancel</button>
+    </div>
+    <div class="category-edit-element">
+        <div class="form-group">
+            <input type="text" name="category" class="form-control" placeholder="Enter Category">
+        </div>
+        <button type="button" class="btn btn-outline-success btn-sm save-edit-category">Save</button>
+        <button type="button" class="btn btn-outline-secondary btn-sm cancel-edit-category">Cancel</button>
+        <button type="button" class="btn btn-outline-danger btn-sm delete-category" style="float: right">Delete</button>
+    </div>
+    <div class="category-result-element">
+        <div class="category-list-title">
+            <h3></h3>
+            <button type="button" class="btn btn-success btn-sm edit-category">Edit</button>
+            <br>
+        </div>
+        <div class="category-list-body">
+            <button type="button" class="btn btn-link add-subcategory">+ Add Sub Category</button>
+        </div>
+    </div>
+</div>
+
+<div class="subcategory-element" style="display: none">
+    <div class="subcategory-add-element">
+        <div class="form-group">
+            <input type="text" name="subcategory" class="form-control" placeholder="Enter Category">
+        </div>
+        <button type="button" class="btn btn-outline-success btn-sm save-add-subcategory">Save</button>
+        <button type="button" class="btn btn-outline-secondary btn-sm cancel-add-subcategory">Cancel</button>
+    </div>
+    <div class="subcategory-edit-element">
+        <div class="form-group">
+            <input type="text" name="subcategory" class="form-control" placeholder="Enter Category">
+        </div>
+        <button type="button" class="btn btn-outline-success btn-sm save-edit-subcategory">Save</button>
+        <button type="button" class="btn btn-outline-secondary btn-sm cancel-edit-subcategory">Cancel</button>
+        <button type="button" class="btn btn-outline-danger btn-sm delete-subcategory" style="float: right">Delete</button>
+    </div>
+    <div class="subcategory-result-element">
+        <div class="subcategory-list-title">
+            <em></em>
+            <button type="button" class="btn btn-success btn-sm edit-subcategory">Edit</button>
+        </div>
+    </div>
+</div>

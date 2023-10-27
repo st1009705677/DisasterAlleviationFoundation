@@ -1,0 +1,95 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+.nav {
+    background-color: #F7931E;
+    color: white;
+}
+
+body {
+  margin-bottom: 60px;
+  background-color: #fff;
+}
+.button btn-primary {
+    background-color: #380266;
+}
+
+.button btn-primary:hover {
+    background-color: #380266;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type=submit] {
+    width: 300px;
+    background-color: #380266;
+    color: white;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+    input [type=submit] {
+    width: 500%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+        input[type=submit]:hover {
+            background-color: #F7931E;
+            color: white;
+        }
+
+div {
+    border-radius: 5px;
+    background-color: #F7931E;
+    padding: 20px;
+    color: #380266;
+}
+
+/*Categories*/
+
+.container-fluid {
+    padding: 10px
+}
+
+h3, h4 {
+    display: inline-block
+}
+
+.category-list, .subcategory-list {
+    margin-bottom: 10px;
+}
+
+.category-list-body {
+    padding-left: 30px
+}
+
+/*Checkbox!!!!!!!!!!!!!!!!*/
+
+
