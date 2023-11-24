@@ -12,6 +12,9 @@ namespace DisasterAlleviationFoundation.Pages
             _logger = logger;
         }
 
+        public static string DonorName { get; internal set; }
+        public static string Description { get; internal set; }
+
         public void OnGet()
         {
 

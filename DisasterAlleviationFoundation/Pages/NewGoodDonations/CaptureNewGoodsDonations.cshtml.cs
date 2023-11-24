@@ -27,11 +27,11 @@ namespace DisasterAlleviationFoundation.Pages
             goodsDonationsInfo.Date = Request.Form["date"];
 
 
-            if (goodsDonationsInfo.DonorName.Length == 0 ||
-                goodsDonationsInfo.Description.Length == 0 ||
-                goodsDonationsInfo.Categories.Length == 0 ||
-                goodsDonationsInfo.NumberOfItems.Length == 0 ||
-                goodsDonationsInfo.Date.Length == 0)
+            if (goodsDonationsInfo.DonorName.Length == 0
+                || goodsDonationsInfo.Description.Length == 0
+                 || goodsDonationsInfo.Categories.Length == 0
+                 || goodsDonationsInfo.NumberOfItems.Length == 0
+                 || goodsDonationsInfo.Date.Length == 0)
             {
                 errorMessage = "Please fill in all the fields";
                 return;
@@ -71,9 +71,9 @@ namespace DisasterAlleviationFoundation.Pages
                 return;
             }
 
-            goodsDonationsInfo.DonorName = "";
-            goodsDonationsInfo.Description = "";
-            goodsDonationsInfo.NumberOfItems = "";
+            IndexModel.DonorName = "";
+            IndexModel.Description = "";
+            Index.NumberOfItems = "";
             goodsDonationsInfo.Categories = "";
             goodsDonationsInfo.Date = "";
             successMessage = "Disaster successfully added";

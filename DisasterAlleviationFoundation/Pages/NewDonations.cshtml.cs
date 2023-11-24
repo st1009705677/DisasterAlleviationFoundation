@@ -6,7 +6,7 @@ namespace DisasterAlleviationFoundation.Pages
     public class NewDonationsModel : PageModel
     {
        
-        public bool ContainsData = false;
+    
         public string donorname = "";
         public string date = "";
         public string amount = "";
@@ -22,7 +22,7 @@ namespace DisasterAlleviationFoundation.Pages
 
         public void OnPost(HttpRequest request)
         {
-            ContainsData = true;
+       
             donorname = request.Form["donorname"];
             date = Request.Form["date"];
             amount = Request.Form["amount"];
