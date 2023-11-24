@@ -4,50 +4,48 @@ using Microsoft.EntityFrameworkCore;
 namespace DisasterAlleviationFoundation
 {
     public class Startup
-    {
-        public Startup(IConfiguration configuration)
-        {
-            Configuration = configuration;
-        }
-
-        public IConfiguration Configuration { get; }
-
-        // This method gets called by the runtime, use this method to add services to the container
-        public void ConfigureServices(IServiceCollection services)
-        {
-            services.AddRazorPages();
-            IServiceCollection serviceCollection = services.AddDbContext<AuthDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("AuthConnectionString")));
-
-            object value = services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<AuthDbContext>();
-        }
-
-        // This method gets called by the runtime, method to configure the HTTP request pipeline
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
-        {
-            if (env.IsDevelopment())
+    { public Startup(IConfiguration configuration)
             {
-                app.UseDeveloperExceptionPage();
-            }
-            else
-            {
-                app.UseExceptionHandler("/Error");
-               
-                app.UseHsts();
+                Configuration = configuration;
             }
 
-            app.UseHttpsRedirection();
-            app.UseStaticFiles();
+            public IConfiguration Configuration { get; }
 
-            app.UseRouting();
-
-            app.UseAuthentication();
-
-            app.UseAuthorization();
-
-            app.UseEndpoints(endpoints =>
+            public void ConfigureServices(IServiceCollection services)
             {
-                endpoints.MapRazorPages();
-            });
+                services.AddRazorPages();
+                services.AddDbContext<AuthDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("AuthConnectionString")));
+
+                services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<AuthDbContext>();
+            }
+
+          
+            public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+            {
+                if (env.IsDevelopment())
+                {
+                    app.UseDeveloperExceptionPage();
+                }
+                else
+                {
+                    app.UseExceptionHandler("/Error");
+                  
+                    app.UseHsts();
+                }
+
+                app.UseHttpsRedirection();
+                app.UseStaticFiles();
+
+                app.UseRouting();
+
+                app.UseAuthentication();
+
+                app.UseAuthorization();
+
+                app.UseEndpoints(endpoints =>
+                {
+                    endpoints.MapRazorPages();
+                });
+            }
         }
     }
-}

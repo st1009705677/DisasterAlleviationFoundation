@@ -2,10 +2,6 @@
 
 namespace DisasterAlleviationFoundation.Data
 {
-    public class AuthDbContext : IdentityDbContext
-    {
-        public AuthDbContext(DbContextOptions<AuthDbContext> options) : base(options)
-        {
-        }
-    }
+    public class AuthDbContext { }
 }
+    

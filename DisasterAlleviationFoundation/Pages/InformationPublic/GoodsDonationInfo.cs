@@ -4,11 +4,11 @@ namespace DisasterAlleviationFoundation.Pages.InformationPublic
 {
     public class GoodsDonationInfo
     {
-        internal int NumberOfItems;
-
-        public DateOnly Date { get; internal set; }
-        public StringValues Categories { get; internal set; }
-        public StringValues Description { get; internal set; }
-        public StringValues DonorName { get; internal set; }
+        public String? DonorName { get; internal set; }
+        internal int NumberOfItems { get; }
+        public DateOnly DateOfDonations { get; internal set; }
+        public String? Categories { get; internal set; }
+        public String? Description { get; internal set; }
+        
     }
 }

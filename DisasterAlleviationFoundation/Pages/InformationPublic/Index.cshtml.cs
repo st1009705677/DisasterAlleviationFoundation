@@ -12,6 +12,7 @@ namespace DisasterAlleviationFoundation.Pages.InformationPublic
 
         public class CatureNewGoodsDonations
         {
+            public static string? DESCRIPTION { get; internal set; }
             public int Quantity { get; set; }
         }
 
