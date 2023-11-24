@@ -4,13 +4,13 @@ using System.Data.SqlClient;
 
 namespace DisasterAlliviationFoundation.Pages
 {
-    public class ViewAllListsModel : PageModel
+    public class PublicAccessModel : PageModel
     {
         public List<ViewAllListsInfo> ListViewAllLists = new List<ViewAllListsInfo>();
 
         private readonly ILogger<ViewAllListsModel> _logger;
 
-        public ViewAllListsModel(ILogger<ViewAllListsModel> logger)
+        public PublicAccessModel(ILogger<ViewAllListsModel> logger)
         {
             _logger = logger;
         }
@@ -30,7 +30,7 @@ namespace DisasterAlliviationFoundation.Pages
                             while (reader.Read())
                             {
                                 ViewAllListsInfo viewAllLists = new ViewAllListsInfo();
-                                viewAllLists.AllIncomingMonetaryDonations = reader.GetString(0);
+                                viewAllLists.TotalMonetaryDonations Received = reader.GetString(0);
                                 viewAllLists.AllIncomingGoodsDonations = reader.GetString(1);
                                 viewAllLists.AllDisasters = reader.GetString(2);
 

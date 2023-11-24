@@ -9,8 +9,6 @@ namespace DisasterAlleviationFoundation.UnitTest
         [TestClass]
         public class UnitTestLogin
         {
-            readonly Login? login;
-
             [TestMethod]
             public void TestMethod1_ReturnsSuccessfullLogin()
             {
