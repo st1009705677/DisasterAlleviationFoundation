@@ -17,15 +17,16 @@ ViewData["Title"] = "";
 <b>
     <a class="btn-light btn-sm" href="AvailableGoodsLists">Available Goods</a>
 </b>
+
+
 <table class="table">
     <thread>
         <tr>
-            <th>All Incoming Monetary Donations</th>
-            <th>All Incoming Goods Donations</th>
-            <th>All Disasters</th>
-            <th>Available Goods</th>
-            <th>Donate</th>
-            <th>Delete</th>
+            <th>Total monetary donations received</th>
+            <th>Total number of goods received</th>
+            <th>Currently active disasters</th>
+            <th>Allocated Disasters</th>
+            <th>Alllocated Money</th>
 
 
         </tr>
@@ -33,23 +34,20 @@ ViewData["Title"] = "";
     <tbody>
         @foreach (var viewAllLists in Model.ListViewAllLists)
         {
-            
-       
-        <tr>
 
-                <td>viewAllLists.All Incoming Monetary Donations</td>
-                <td>viewAllLists.All Incoming Goods Donations</td>
-                <td>viewAllLists.All Disasters</td>
-                <td>viewAllLists.Available Goods</td>
-                <td>viewAllLists.Edit<button type="submit" class="btn btn-primary">Donate< href="/CaptureNewMonetoryDonations"></></button></td>
-                <td>viewAllLists.Delete<button type="submit" class="btn btn-primary">Delete< href="/CaptureNewMonetoryDonations"></></button></td>
+
+            <tr>
+
+                <td>viewAllLists.Total monetary donations received</td>
+                <td>viewAllLists.Total number of goods received</td>
+                <td>viewAllLists.Currently active disasters</td>
+                <td>viewAllLists.Allocated Disasters</td>
+                <td>viewAllLists.Allocated Money</td>
                 <td>
-             
                 </td>
                 <td>
-
                 </td>
-        </tr>
+            </tr>
         }
     </tbody>
 </table>
