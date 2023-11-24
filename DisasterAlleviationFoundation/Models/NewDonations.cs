@@ -10,7 +10,7 @@ namespace DisasterAlleviationFoundation.Models
     {
             [Key]
             public string? DonorName { get; set; }
-            public int D { get; set; }
+            public int Amount { get; set; }
             public DateTime DateOfDonation { get; set; }
             public string? ItemDesc { get; set; }
             public string? DateOfGoodsDonation { get; set; }
