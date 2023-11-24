@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace DisasterAlleviationFoundation.Pages
 {
-    public class CaptureNewGoodsDonationsModel : PageModel
+    public class RegisterModel : PageModel
     {
         public void OnGet()
         {

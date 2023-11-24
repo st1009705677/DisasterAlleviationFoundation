@@ -13,16 +13,16 @@ html {
   min-height: 100%;
 }
 .nav {
-    background-color: #F7931E;
+    background-color: #fff;
     color: white;
 }
 
 body {
-  margin-bottom: 60px;
-  background-color: #fff;
+    margin-bottom: 60px;
+    background-color: #F7931E;
 }
 .button btn-primary {
-    background-color: #380266;
+    background-color: #F7931E;
 }
 
 .button btn-primary:hover {
@@ -64,13 +64,6 @@ button[type=submit] {
             background-color: #F7931E;
             color: white;
         }
-
-div {
-    border-radius: 5px;
-    background-color: #F7931E;
-    padding: 20px;
-    color: #380266;
-}
 
 /*Categories*/
 

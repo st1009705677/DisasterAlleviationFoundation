@@ -1,0 +1,41 @@
+﻿@page
+@model DisasterAlleviationFoundation.Pages.AvailableGoodsModel
+@{
+}
+
+<br />
+
+<h2>Available Goods</h2>
+<table class="table">
+    <thread>
+        <tr>
+            <th>ID</th>
+            <th>Available Goods</th>
+            <th>Allocated Money</th>
+            <th>Allocated Goods</th>
+            <th>Available Funds</th>
+            <th>viewAllLists.A<button type="submit" class="btn btn-primary">Donate< href="/CaptureNewMonetoryDonations"></></button></th>
+            <th>viewAllLists.Delete<button type="submit" class="btn btn-primary">Delete< href="/CaptureNewMonetoryDonations"></></button></th>
+
+
+        </tr>
+    </thread>
+  
+        @foreach (var availableGoods in Model.AvailableGoods)
+        {
+
+
+            <tr>
+
+                <td>availableGoodsLists.Available Goods</td>
+                <td>availableGoodsLists.Allocated Money</td>
+                <td>availableGoodsLists.Allocated Goods</td>
+                <td>availableGoodsLists.>Available Money</td>
+                <td>
+                </td>
+                <td>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

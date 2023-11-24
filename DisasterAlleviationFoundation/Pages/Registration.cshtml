@@ -1,31 +1,44 @@
 ﻿@page
 @model DisasterAlleviationFoundation.Pages.RegistrationModel
 @{
+    ViewData["Title"] = "Registration";
 }
 
 
 <h2>Register</h2>
-<div class="registration-page">
-    <div class="form">
-        
-       
-            <label for="text">First Name</label><br>
-            <input type="text" placeholder="Enter your first name..." />
-            <br />
-            <label for="text">Last Name</label><br>
-            <input type="text" placeholder="Enter your last name..." />
-            <br />
 
-        <label for="text">Email</label><br>
-        <input type="text" placeholder="Enter your email.." />
-        <br />
-        <label for="text">Password</label><br>
-        <input type="text" placeholder="Enter your password..." />
-        <br />
-            
-           <button type="submit" class="btn btn-primary">Register</button>
+<div class="registration-page">
+
+    <div class="register-form">
+
+            <form method="POST">
+         <br />
+         <label for="text">First Name</label><br>
+         <input type="text" id="FirstName" name="FirstName" placeholder="Enter your first name..." />
+         
+         <br />
+         <label for="text">Last Name</label><br>
+         <input type="text" id="LastName" name="LastName" placeholder="Enter your last name..." />
+     
+         <br />
+         <label for="text">Email</label><br>
+         <input type="text" id="Email" name="Email" placeholder="Enter your email.." />
+        
+         <br />
+         <label for="text">Password</label><br>
+         <input type="text" id="Password" name="Password" placeholder="Enter your password..." />
+     
+         <br />
+         <label for="text">Confirm Password</label><br>
+         <input type="text" id="ConfirmPassword" name="ConfirmPassword" placeholder="Enter your password..." />
+         <br />
+
+        <button type="submit" class="btn btn-primary">Register</button>
           
-            <p class="message">Already have an account? <a href="/Login">Login</a></p>
+         <p class="message">Already have an account? <a href="/Login">Login</a></p>
         </>
+
+        </form>
     </div>
+    
 </div>
